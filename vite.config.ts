@@ -12,11 +12,11 @@ export default defineConfig({
   },
   build: {
     lib: {
-      name: `shopify-partners`,
+      name: `ShopifyPartnersUtils`,
       entry: resolve(__dirname, "src/main.ts"),
-      fileName: () => "shopify-partners.js",
-      formats: ["es"],
+      fileName: () => "shopify-partners-utils.js",
+      formats: ["iife"],
     },
-    target: 'esnext'
+    target: 'es2018'
   }
 })
